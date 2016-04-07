@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E0A47761CB6513500F4D663 /* TMASearchCityInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A47751CB6513500F4D663 /* TMASearchCityInteractor.m */; };
+		8E0A47791CB659C800F4D663 /* TMASearchCityDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A47781CB659C800F4D663 /* TMASearchCityDataManager.m */; };
+		8E0A477D1CB65CB300F4D663 /* TMAGooglePlacesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A477C1CB65CB300F4D663 /* TMAGooglePlacesClient.m */; };
+		8E0A47841CB68F9500F4D663 /* TMACityDetailWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A47831CB68F9500F4D663 /* TMACityDetailWireFrame.m */; };
+		8E4E69E91CB5A646006B430A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E69E81CB5A646006B430A /* main.m */; };
+		8E4E69EC1CB5A646006B430A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E69EB1CB5A646006B430A /* AppDelegate.m */; };
+		8E4E69F21CB5A646006B430A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4E69F01CB5A646006B430A /* Main.storyboard */; };
+		8E4E69F41CB5A646006B430A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E4E69F31CB5A646006B430A /* Assets.xcassets */; };
+		8E4E69F71CB5A646006B430A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4E69F51CB5A646006B430A /* LaunchScreen.storyboard */; };
+		8E4E6A021CB5A646006B430A /* TalentoMobileAssigmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E6A011CB5A646006B430A /* TalentoMobileAssigmentTests.m */; };
+		8E4E6A311CB5B579006B430A /* TMASearchCityWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E6A301CB5B579006B430A /* TMASearchCityWireFrame.m */; };
+		8E4E6A341CB5B6B6006B430A /* TMASearchCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E6A331CB5B6B6006B430A /* TMASearchCityViewController.m */; };
+		8E4E6A371CB5B70D006B430A /* TMASearchCityPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E6A361CB5B70D006B430A /* TMASearchCityPresenter.m */; };
+		8EE6AE731CB69F8A00066FCE /* TMAAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6AE721CB69F8A00066FCE /* TMAAppDependencies.m */; };
+		A4A7B4806441A0C90C6F9AAE /* libPods-TalentoMobileAssigment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1D49119AEF694993D9AFBE /* libPods-TalentoMobileAssigment.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E4E69FE1CB5A646006B430A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E4E69DC1CB5A646006B430A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E4E69E31CB5A646006B430A;
+			remoteInfo = TalentoMobileAssigment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56D9FFE91F0DC50BA4CDC1CE /* Pods-TalentoMobileAssigment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalentoMobileAssigment.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalentoMobileAssigment/Pods-TalentoMobileAssigment.release.xcconfig"; sourceTree = "<group>"; };
+		8E0A47721CB6484100F4D663 /* TMASearchCityViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMASearchCityViewInterface.h; sourceTree = "<group>"; };
+		8E0A47731CB64E5600F4D663 /* TMASearchCityInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMASearchCityInteractorIO.h; sourceTree = "<group>"; };
+		8E0A47741CB6513500F4D663 /* TMASearchCityInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMASearchCityInteractor.h; sourceTree = "<group>"; };
+		8E0A47751CB6513500F4D663 /* TMASearchCityInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMASearchCityInteractor.m; sourceTree = "<group>"; };
+		8E0A47771CB659C800F4D663 /* TMASearchCityDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMASearchCityDataManager.h; sourceTree = "<group>"; };
+		8E0A47781CB659C800F4D663 /* TMASearchCityDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMASearchCityDataManager.m; sourceTree = "<group>"; };
+		8E0A477B1CB65CB300F4D663 /* TMAGooglePlacesClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAGooglePlacesClient.h; sourceTree = "<group>"; };
+		8E0A477C1CB65CB300F4D663 /* TMAGooglePlacesClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAGooglePlacesClient.m; sourceTree = "<group>"; };
+		8E0A47821CB68F9500F4D663 /* TMACityDetailWireFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMACityDetailWireFrame.h; sourceTree = "<group>"; };
+		8E0A47831CB68F9500F4D663 /* TMACityDetailWireFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMACityDetailWireFrame.m; sourceTree = "<group>"; };
+		8E4E69E41CB5A646006B430A /* TalentoMobileAssigment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalentoMobileAssigment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4E69E81CB5A646006B430A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E4E69EA1CB5A646006B430A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E4E69EB1CB5A646006B430A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E4E69F11CB5A646006B430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E4E69F31CB5A646006B430A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E4E69F61CB5A646006B430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E4E69F81CB5A646006B430A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E4E69FD1CB5A646006B430A /* TalentoMobileAssigmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalentoMobileAssigmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4E6A011CB5A646006B430A /* TalentoMobileAssigmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalentoMobileAssigmentTests.m; sourceTree = "<group>"; };
+		8E4E6A031CB5A646006B430A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E4E6A2F1CB5B579006B430A /* TMASearchCityWireFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMASearchCityWireFrame.h; sourceTree = "<group>"; };
+		8E4E6A301CB5B579006B430A /* TMASearchCityWireFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMASearchCityWireFrame.m; sourceTree = "<group>"; };
+		8E4E6A321CB5B6B6006B430A /* TMASearchCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMASearchCityViewController.h; sourceTree = "<group>"; };
+		8E4E6A331CB5B6B6006B430A /* TMASearchCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMASearchCityViewController.m; sourceTree = "<group>"; };
+		8E4E6A351CB5B70D006B430A /* TMASearchCityPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMASearchCityPresenter.h; sourceTree = "<group>"; };
+		8E4E6A361CB5B70D006B430A /* TMASearchCityPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMASearchCityPresenter.m; sourceTree = "<group>"; };
+		8E4E6A381CB5B754006B430A /* TMAModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAModuleInterface.h; sourceTree = "<group>"; };
+		8EE6AE701CB69C6C00066FCE /* TMACityDetailModuleDelegateInterfaz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMACityDetailModuleDelegateInterfaz.h; sourceTree = "<group>"; };
+		8EE6AE711CB69F8A00066FCE /* TMAAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAAppDependencies.h; sourceTree = "<group>"; };
+		8EE6AE721CB69F8A00066FCE /* TMAAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAAppDependencies.m; sourceTree = "<group>"; };
+		AE1D49119AEF694993D9AFBE /* libPods-TalentoMobileAssigment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TalentoMobileAssigment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E2AE20DDAC5F3AEC360BE2 /* Pods-TalentoMobileAssigment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalentoMobileAssigment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalentoMobileAssigment/Pods-TalentoMobileAssigment.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E4E69E11CB5A646006B430A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A7B4806441A0C90C6F9AAE /* libPods-TalentoMobileAssigment.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E4E69FA1CB5A646006B430A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CE9AA1F88725CB212B26821 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9E2AE20DDAC5F3AEC360BE2 /* Pods-TalentoMobileAssigment.debug.xcconfig */,
+				56D9FFE91F0DC50BA4CDC1CE /* Pods-TalentoMobileAssigment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E0A477A1CB65C4400F4D663 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A477B1CB65CB300F4D663 /* TMAGooglePlacesClient.h */,
+				8E0A477C1CB65CB300F4D663 /* TMAGooglePlacesClient.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		8E4E69DB1CB5A646006B430A = {
+			isa = PBXGroup;
+			children = (
+				8E4E69E61CB5A646006B430A /* TalentoMobileAssigment */,
+				8E4E6A001CB5A646006B430A /* TalentoMobileAssigmentTests */,
+				8E4E69E51CB5A646006B430A /* Products */,
+				0CE9AA1F88725CB212B26821 /* Pods */,
+				D511BA7235F1A903BB77CC89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8E4E69E51CB5A646006B430A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E69E41CB5A646006B430A /* TalentoMobileAssigment.app */,
+				8E4E69FD1CB5A646006B430A /* TalentoMobileAssigmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E4E69E61CB5A646006B430A /* TalentoMobileAssigment */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A2E1CB5B3EB006B430A /* Common */,
+				8E4E6A0F1CB5B250006B430A /* Modules */,
+				8E4E69EA1CB5A646006B430A /* AppDelegate.h */,
+				8E4E69EB1CB5A646006B430A /* AppDelegate.m */,
+				8EE6AE711CB69F8A00066FCE /* TMAAppDependencies.h */,
+				8EE6AE721CB69F8A00066FCE /* TMAAppDependencies.m */,
+				8E4E69F01CB5A646006B430A /* Main.storyboard */,
+				8E4E69F31CB5A646006B430A /* Assets.xcassets */,
+				8E4E69F51CB5A646006B430A /* LaunchScreen.storyboard */,
+				8E4E69F81CB5A646006B430A /* Info.plist */,
+				8E4E69E71CB5A646006B430A /* Supporting Files */,
+			);
+			path = TalentoMobileAssigment;
+			sourceTree = "<group>";
+		};
+		8E4E69E71CB5A646006B430A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E69E81CB5A646006B430A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E4E6A001CB5A646006B430A /* TalentoMobileAssigmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A011CB5A646006B430A /* TalentoMobileAssigmentTests.m */,
+				8E4E6A031CB5A646006B430A /* Info.plist */,
+			);
+			path = TalentoMobileAssigmentTests;
+			sourceTree = "<group>";
+		};
+		8E4E6A0F1CB5B250006B430A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A121CB5B280006B430A /* CityDetail */,
+				8E4E6A111CB5B263006B430A /* SearchCity */,
+				8E4E6A101CB5B256006B430A /* HistoryList */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		8E4E6A101CB5B256006B430A /* HistoryList */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A211CB5B36D006B430A /* Application Logic */,
+				8E4E6A201CB5B365006B430A /* User Interface */,
+				8E4E6A1F1CB5B35B006B430A /* Module Interface */,
+			);
+			name = HistoryList;
+			sourceTree = "<group>";
+		};
+		8E4E6A111CB5B263006B430A /* SearchCity */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A1E1CB5B34C006B430A /* Module Interface */,
+				8E4E6A1D1CB5B343006B430A /* User Interface */,
+				8E4E6A1C1CB5B331006B430A /* Application Logic */,
+			);
+			name = SearchCity;
+			sourceTree = "<group>";
+		};
+		8E4E6A121CB5B280006B430A /* CityDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A131CB5B29C006B430A /* Application Logic */,
+				8E4E6A181CB5B2CE006B430A /* User Interface */,
+				8E4E6A171CB5B2C1006B430A /* Module Interface */,
+			);
+			name = CityDetail;
+			sourceTree = "<group>";
+		};
+		8E4E6A131CB5B29C006B430A /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A161CB5B2BB006B430A /* Model */,
+				8E4E6A151CB5B2B3006B430A /* Interactor */,
+				8E4E6A141CB5B2A7006B430A /* Manager */,
+			);
+			name = "Application Logic";
+			sourceTree = "<group>";
+		};
+		8E4E6A141CB5B2A7006B430A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		8E4E6A151CB5B2B3006B430A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		8E4E6A161CB5B2BB006B430A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8E4E6A171CB5B2C1006B430A /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6AE701CB69C6C00066FCE /* TMACityDetailModuleDelegateInterfaz.h */,
+			);
+			name = "Module Interface";
+			sourceTree = "<group>";
+		};
+		8E4E6A181CB5B2CE006B430A /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A1B1CB5B2EF006B430A /* Wireframe */,
+				8E4E6A1A1CB5B2E7006B430A /* View */,
+				8E4E6A191CB5B2E2006B430A /* Presenter */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		8E4E6A191CB5B2E2006B430A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		8E4E6A1A1CB5B2E7006B430A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8E4E6A1B1CB5B2EF006B430A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A47821CB68F9500F4D663 /* TMACityDetailWireFrame.h */,
+				8E0A47831CB68F9500F4D663 /* TMACityDetailWireFrame.m */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		8E4E6A1C1CB5B331006B430A /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A2D1CB5B3DB006B430A /* Manager */,
+				8E4E6A2C1CB5B3D5006B430A /* Interactor */,
+				8E4E6A2B1CB5B3D1006B430A /* Model */,
+			);
+			name = "Application Logic";
+			sourceTree = "<group>";
+		};
+		8E4E6A1D1CB5B343006B430A /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A2A1CB5B3C2006B430A /* Wireframe */,
+				8E4E6A291CB5B3BA006B430A /* Presenter */,
+				8E4E6A281CB5B3B6006B430A /* View */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		8E4E6A1E1CB5B34C006B430A /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A381CB5B754006B430A /* TMAModuleInterface.h */,
+			);
+			name = "Module Interface";
+			sourceTree = "<group>";
+		};
+		8E4E6A1F1CB5B35B006B430A /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Module Interface";
+			sourceTree = "<group>";
+		};
+		8E4E6A201CB5B365006B430A /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A271CB5B3A2006B430A /* Wireframe */,
+				8E4E6A261CB5B39E006B430A /* Presenter */,
+				8E4E6A251CB5B399006B430A /* View */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		8E4E6A211CB5B36D006B430A /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A241CB5B385006B430A /* Manager */,
+				8E4E6A231CB5B37D006B430A /* Interactor */,
+				8E4E6A221CB5B378006B430A /* Model */,
+			);
+			name = "Application Logic";
+			sourceTree = "<group>";
+		};
+		8E4E6A221CB5B378006B430A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8E4E6A231CB5B37D006B430A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		8E4E6A241CB5B385006B430A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		8E4E6A251CB5B399006B430A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8E4E6A261CB5B39E006B430A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		8E4E6A271CB5B3A2006B430A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		8E4E6A281CB5B3B6006B430A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A321CB5B6B6006B430A /* TMASearchCityViewController.h */,
+				8E4E6A331CB5B6B6006B430A /* TMASearchCityViewController.m */,
+				8E0A47721CB6484100F4D663 /* TMASearchCityViewInterface.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8E4E6A291CB5B3BA006B430A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A351CB5B70D006B430A /* TMASearchCityPresenter.h */,
+				8E4E6A361CB5B70D006B430A /* TMASearchCityPresenter.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		8E4E6A2A1CB5B3C2006B430A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E6A2F1CB5B579006B430A /* TMASearchCityWireFrame.h */,
+				8E4E6A301CB5B579006B430A /* TMASearchCityWireFrame.m */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		8E4E6A2B1CB5B3D1006B430A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8E4E6A2C1CB5B3D5006B430A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A47731CB64E5600F4D663 /* TMASearchCityInteractorIO.h */,
+				8E0A47741CB6513500F4D663 /* TMASearchCityInteractor.h */,
+				8E0A47751CB6513500F4D663 /* TMASearchCityInteractor.m */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		8E4E6A2D1CB5B3DB006B430A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A47771CB659C800F4D663 /* TMASearchCityDataManager.h */,
+				8E0A47781CB659C800F4D663 /* TMASearchCityDataManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		8E4E6A2E1CB5B3EB006B430A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A477A1CB65C4400F4D663 /* Networking */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		D511BA7235F1A903BB77CC89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE1D49119AEF694993D9AFBE /* libPods-TalentoMobileAssigment.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E4E69E31CB5A646006B430A /* TalentoMobileAssigment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E4E6A061CB5A646006B430A /* Build configuration list for PBXNativeTarget "TalentoMobileAssigment" */;
+			buildPhases = (
+				030295071C2B08A9B2438A8B /* Check Pods Manifest.lock */,
+				8E4E69E01CB5A646006B430A /* Sources */,
+				8E4E69E11CB5A646006B430A /* Frameworks */,
+				8E4E69E21CB5A646006B430A /* Resources */,
+				C69EE497B00E284026B7EEEC /* Embed Pods Frameworks */,
+				B0955B98E637712ABAC69F9D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalentoMobileAssigment;
+			productName = TalentoMobileAssigment;
+			productReference = 8E4E69E41CB5A646006B430A /* TalentoMobileAssigment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E4E69FC1CB5A646006B430A /* TalentoMobileAssigmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E4E6A091CB5A646006B430A /* Build configuration list for PBXNativeTarget "TalentoMobileAssigmentTests" */;
+			buildPhases = (
+				8E4E69F91CB5A646006B430A /* Sources */,
+				8E4E69FA1CB5A646006B430A /* Frameworks */,
+				8E4E69FB1CB5A646006B430A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E4E69FF1CB5A646006B430A /* PBXTargetDependency */,
+			);
+			name = TalentoMobileAssigmentTests;
+			productName = TalentoMobileAssigmentTests;
+			productReference = 8E4E69FD1CB5A646006B430A /* TalentoMobileAssigmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E4E69DC1CB5A646006B430A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Said Rehouni";
+				TargetAttributes = {
+					8E4E69E31CB5A646006B430A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8E4E69FC1CB5A646006B430A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8E4E69E31CB5A646006B430A;
+					};
+				};
+			};
+			buildConfigurationList = 8E4E69DF1CB5A646006B430A /* Build configuration list for PBXProject "TalentoMobileAssigment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E4E69DB1CB5A646006B430A;
+			productRefGroup = 8E4E69E51CB5A646006B430A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E4E69E31CB5A646006B430A /* TalentoMobileAssigment */,
+				8E4E69FC1CB5A646006B430A /* TalentoMobileAssigmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E4E69E21CB5A646006B430A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4E69F71CB5A646006B430A /* LaunchScreen.storyboard in Resources */,
+				8E4E69F41CB5A646006B430A /* Assets.xcassets in Resources */,
+				8E4E69F21CB5A646006B430A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E4E69FB1CB5A646006B430A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		030295071C2B08A9B2438A8B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B0955B98E637712ABAC69F9D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TalentoMobileAssigment/Pods-TalentoMobileAssigment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C69EE497B00E284026B7EEEC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TalentoMobileAssigment/Pods-TalentoMobileAssigment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E4E69E01CB5A646006B430A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0A47761CB6513500F4D663 /* TMASearchCityInteractor.m in Sources */,
+				8E0A477D1CB65CB300F4D663 /* TMAGooglePlacesClient.m in Sources */,
+				8E0A47841CB68F9500F4D663 /* TMACityDetailWireFrame.m in Sources */,
+				8E4E6A341CB5B6B6006B430A /* TMASearchCityViewController.m in Sources */,
+				8E0A47791CB659C800F4D663 /* TMASearchCityDataManager.m in Sources */,
+				8E4E6A311CB5B579006B430A /* TMASearchCityWireFrame.m in Sources */,
+				8E4E69EC1CB5A646006B430A /* AppDelegate.m in Sources */,
+				8EE6AE731CB69F8A00066FCE /* TMAAppDependencies.m in Sources */,
+				8E4E6A371CB5B70D006B430A /* TMASearchCityPresenter.m in Sources */,
+				8E4E69E91CB5A646006B430A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E4E69F91CB5A646006B430A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4E6A021CB5A646006B430A /* TalentoMobileAssigmentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E4E69FF1CB5A646006B430A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E4E69E31CB5A646006B430A /* TalentoMobileAssigment */;
+			targetProxy = 8E4E69FE1CB5A646006B430A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E4E69F01CB5A646006B430A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E4E69F11CB5A646006B430A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E4E69F51CB5A646006B430A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E4E69F61CB5A646006B430A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E4E6A041CB5A646006B430A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E4E6A051CB5A646006B430A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E4E6A071CB5A646006B430A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9E2AE20DDAC5F3AEC360BE2 /* Pods-TalentoMobileAssigment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TalentoMobileAssigment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RehouniSaid.TalentoMobileAssigment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E4E6A081CB5A646006B430A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56D9FFE91F0DC50BA4CDC1CE /* Pods-TalentoMobileAssigment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TalentoMobileAssigment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RehouniSaid.TalentoMobileAssigment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8E4E6A0A1CB5A646006B430A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TalentoMobileAssigmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RehouniSaid.TalentoMobileAssigmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalentoMobileAssigment.app/TalentoMobileAssigment";
+			};
+			name = Debug;
+		};
+		8E4E6A0B1CB5A646006B430A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TalentoMobileAssigmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RehouniSaid.TalentoMobileAssigmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalentoMobileAssigment.app/TalentoMobileAssigment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E4E69DF1CB5A646006B430A /* Build configuration list for PBXProject "TalentoMobileAssigment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4E6A041CB5A646006B430A /* Debug */,
+				8E4E6A051CB5A646006B430A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E4E6A061CB5A646006B430A /* Build configuration list for PBXNativeTarget "TalentoMobileAssigment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4E6A071CB5A646006B430A /* Debug */,
+				8E4E6A081CB5A646006B430A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E4E6A091CB5A646006B430A /* Build configuration list for PBXNativeTarget "TalentoMobileAssigmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4E6A0A1CB5A646006B430A /* Debug */,
+				8E4E6A0B1CB5A646006B430A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E4E69DC1CB5A646006B430A /* Project object */;
+}

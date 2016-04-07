@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import <GoogleMaps/GoogleMaps.h>
+#import "TMAAppDependencies.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) TMAAppDependencies *appDependencies;
 
 @end
 
@@ -16,7 +20,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [GMSServices provideAPIKey:@"AIzaSyDmwNSTjS38So7pxN53YLcZnuPYjvndXRM"];
+    self.appDependencies = [[TMAAppDependencies alloc] init];
+    self.window = [[UIWindow alloc] init];
+    [self.appDependencies installRootViewControllerIntoWindow:self.window];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
