@@ -11,11 +11,12 @@
 
 @implementation TMASearchCityDataManager
 
-- (id)initWithGooglePlacesClient:(TMAGooglePlacesClient *)googlePlacesClient
+- (id)initWithGooglePlacesClient:(TMAGooglePlacesClient *)googlePlacesClient andCoreDataManager: (TMACoreDataManager *) coreDataManager
 {
     if (self = [super init])
     {
         _googlePlacesClient = googlePlacesClient;
+        _coreDataManager = coreDataManager;
     }
     
     return self;
@@ -36,6 +37,11 @@
             completionBlock(@[]);
         }
     }];
+}
+
+- (void)citiesFromHistory:(void (^)(NSArray *results))completionBlock
+{
+    completionBlock(@[@"Madrid", @"Barcelona", @"Valencia"]);
 }
 
 #pragma mark - Private

@@ -11,6 +11,7 @@
 @protocol TMASearchCityInteractorInput <NSObject>
 
 - (void)findUpcomingItemsWithText:(NSString *)text;
+- (void)fetchSearchHistory;
 
 @end
 
@@ -18,5 +19,6 @@
 @protocol TMASearchCityInteractorOutput <NSObject>
 
 - (void)foundUpcomingItems:(NSArray *)upcomingItems;
+- (void)fetchedSearchHistory:(NSArray *)upcomingItems;
 
 @end

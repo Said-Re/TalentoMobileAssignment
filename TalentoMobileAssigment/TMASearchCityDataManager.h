@@ -8,13 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "TMAGooglePlacesClient.h"
+#import "TMACoreDataManager.h"
 
 @interface TMASearchCityDataManager : NSObject
 
 @property (nonatomic, strong) TMAGooglePlacesClient *googlePlacesClient;
+@property (nonatomic, strong) TMACoreDataManager *coreDataManager;
 
-- (id)initWithGooglePlacesClient:(TMAGooglePlacesClient *)googlePlacesClient;
+- (id)initWithGooglePlacesClient:(TMAGooglePlacesClient *)googlePlacesClient andCoreDataManager: (TMACoreDataManager *) coreDataManager;
 - (void)citiesWithName:(NSString *)cityName
     andCompletionBlock:(void (^)(NSArray *results))completionBlock;
+- (void)citiesFromHistory:(void (^)(NSArray *results))completionBlock;
 
 @end

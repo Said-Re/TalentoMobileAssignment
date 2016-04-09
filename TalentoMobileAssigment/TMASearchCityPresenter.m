@@ -12,9 +12,19 @@
 
 #pragma mark - TMAModuleInterface
 
+- (void)presentCity:(NSString *)cityName
+{
+
+}
+
 - (void)findCities:(NSString *)cityName
 {
     [self.interactor findUpcomingItemsWithText:cityName];
+}
+
+- (void)presentHistory
+{
+    [self.interactor fetchSearchHistory];
 }
 
 #pragma mark - TMASearchCityInteractorOuput
@@ -24,11 +34,9 @@
     [self.userInterface showUpcomingDisplayData:upcomingItems];
 }
 
-#pragma mark - private
-
-- (NSArray *)dataForInterface:(NSArray *)upcomingItems
+- (void)fetchedSearchHistory:(NSArray *)upcomingItems
 {
-    return  nil;
+    [self.userInterface showUpcomingDisplayData:upcomingItems];
 }
 
 @end

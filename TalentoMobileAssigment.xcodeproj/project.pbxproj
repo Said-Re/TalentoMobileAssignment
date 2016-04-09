@@ -20,6 +20,7 @@
 		8E4E6A311CB5B579006B430A /* TMASearchCityWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E6A301CB5B579006B430A /* TMASearchCityWireFrame.m */; };
 		8E4E6A341CB5B6B6006B430A /* TMASearchCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E6A331CB5B6B6006B430A /* TMASearchCityViewController.m */; };
 		8E4E6A371CB5B70D006B430A /* TMASearchCityPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E6A361CB5B70D006B430A /* TMASearchCityPresenter.m */; };
+		8EB808291CB98B03003A180D /* TMACoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB808281CB98B03003A180D /* TMACoreDataManager.m */; };
 		8EE6AE731CB69F8A00066FCE /* TMAAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6AE721CB69F8A00066FCE /* TMAAppDependencies.m */; };
 		A4A7B4806441A0C90C6F9AAE /* libPods-TalentoMobileAssigment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1D49119AEF694993D9AFBE /* libPods-TalentoMobileAssigment.a */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,8 @@
 		8E4E6A351CB5B70D006B430A /* TMASearchCityPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMASearchCityPresenter.h; sourceTree = "<group>"; };
 		8E4E6A361CB5B70D006B430A /* TMASearchCityPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMASearchCityPresenter.m; sourceTree = "<group>"; };
 		8E4E6A381CB5B754006B430A /* TMAModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAModuleInterface.h; sourceTree = "<group>"; };
+		8EB808271CB98B03003A180D /* TMACoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMACoreDataManager.h; sourceTree = "<group>"; };
+		8EB808281CB98B03003A180D /* TMACoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMACoreDataManager.m; sourceTree = "<group>"; };
 		8EE6AE701CB69C6C00066FCE /* TMACityDetailModuleDelegateInterfaz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMACityDetailModuleDelegateInterfaz.h; sourceTree = "<group>"; };
 		8EE6AE711CB69F8A00066FCE /* TMAAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAAppDependencies.h; sourceTree = "<group>"; };
 		8EE6AE721CB69F8A00066FCE /* TMAAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAAppDependencies.m; sourceTree = "<group>"; };
@@ -429,9 +432,19 @@
 		8E4E6A2E1CB5B3EB006B430A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8EB808261CB98AF1003A180D /* DataStore */,
 				8E0A477A1CB65C4400F4D663 /* Networking */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		8EB808261CB98AF1003A180D /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				8EB808271CB98B03003A180D /* TMACoreDataManager.h */,
+				8EB808281CB98B03003A180D /* TMACoreDataManager.m */,
+			);
+			name = DataStore;
 			sourceTree = "<group>";
 		};
 		D511BA7235F1A903BB77CC89 /* Frameworks */ = {
@@ -598,6 +611,7 @@
 				8E0A47841CB68F9500F4D663 /* TMACityDetailWireFrame.m in Sources */,
 				8E4E6A341CB5B6B6006B430A /* TMASearchCityViewController.m in Sources */,
 				8E0A47791CB659C800F4D663 /* TMASearchCityDataManager.m in Sources */,
+				8EB808291CB98B03003A180D /* TMACoreDataManager.m in Sources */,
 				8E4E6A311CB5B579006B430A /* TMASearchCityWireFrame.m in Sources */,
 				8E4E69EC1CB5A646006B430A /* AppDelegate.m in Sources */,
 				8EE6AE731CB69F8A00066FCE /* TMAAppDependencies.m in Sources */,

@@ -30,4 +30,12 @@
     }];
 }
 
+- (void)fetchSearchHistory
+{
+    __weak typeof(self) welf = self;
+    [self.dataManager citiesFromHistory:^(NSArray *results) {
+        [welf.output fetchedSearchHistory:results];
+    }];
+}
+
 @end

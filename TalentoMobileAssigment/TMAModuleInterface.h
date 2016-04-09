@@ -12,5 +12,6 @@
 
 - (void)presentCity:(NSString *)cityName;
 - (void)findCities:(NSString *)cityName;
+- (void)presentHistory;
 
 @end

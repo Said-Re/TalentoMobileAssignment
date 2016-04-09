@@ -28,7 +28,7 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     self.view = self.tableView;
     
-    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 70, 320, 44)];
+    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.tableView.frame), 44)];
     self.searchBar.delegate = self;
     [self.searchBar setShowsCancelButton:YES];
     self.tableView.tableHeaderView = self.searchBar;
@@ -46,6 +46,7 @@
 {
     [super viewDidAppear:animated];
     [self.searchBar becomeFirstResponder];
+    [self.eventHandler presentHistory];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -73,11 +74,15 @@
     {
         [self.eventHandler findCities:searchText];
     }
+    else
+    {
+        [self.eventHandler presentHistory];
+    }
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
-    
+    [self.eventHandler presentCity:searchBar.text];
 }
 
 #pragma mark - TMASearchCityViewInterface

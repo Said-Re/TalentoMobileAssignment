@@ -11,6 +11,7 @@
 #import "TMAGooglePlacesClient.h"
 #import "TMASearchCityDataManager.h"
 #import "TMASearchCityInteractor.h"
+#import "TMACoreDataManager.h"
 
 @class TMAGooglePlacesClient;
 
@@ -40,11 +41,12 @@
 - (void)configureDependencies
 {
     TMAGooglePlacesClient *googlePlacesClient = [[TMAGooglePlacesClient alloc] init];
+    TMACoreDataManager *coreDataManager = [[TMACoreDataManager alloc] init];
     
     // SearchCity Module
     self.searchCityWireFrame = [[TMASearchCityWireFrame alloc] init];
     TMASearchCityPresenter *searchCityPresenter = [[TMASearchCityPresenter alloc] init];
-    TMASearchCityDataManager *searchCityDataManager = [[TMASearchCityDataManager alloc] initWithGooglePlacesClient:googlePlacesClient];
+    TMASearchCityDataManager *searchCityDataManager = [[TMASearchCityDataManager alloc] initWithGooglePlacesClient:googlePlacesClient andCoreDataManager:coreDataManager];
     TMASearchCityInteractor *searchCityInteractor = [[TMASearchCityInteractor alloc] initWithDataManager:searchCityDataManager];
     
     self.searchCityWireFrame.searchCityPresenter = searchCityPresenter;
