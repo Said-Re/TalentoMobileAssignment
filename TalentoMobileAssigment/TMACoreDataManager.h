@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import "City.h"
 
 @interface TMACoreDataManager : NSObject
+
+- (void)fetchCitiesFromHistory:(void (^)(NSArray *results))completionBlock;
+- (void)saveCityInHistoryWithName:(NSString *)cityName;
 
 @end

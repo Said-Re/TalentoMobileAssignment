@@ -21,6 +21,9 @@
 		8E4E6A341CB5B6B6006B430A /* TMASearchCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E6A331CB5B6B6006B430A /* TMASearchCityViewController.m */; };
 		8E4E6A371CB5B70D006B430A /* TMASearchCityPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E6A361CB5B70D006B430A /* TMASearchCityPresenter.m */; };
 		8EB808291CB98B03003A180D /* TMACoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB808281CB98B03003A180D /* TMACoreDataManager.m */; };
+		8EB8082C1CB9A306003A180D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8082A1CB9A306003A180D /* Model.xcdatamodeld */; };
+		8EB808321CB9A352003A180D /* City+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8082F1CB9A352003A180D /* City+CoreDataProperties.m */; };
+		8EB808331CB9A352003A180D /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB808311CB9A352003A180D /* City.m */; };
 		8EE6AE731CB69F8A00066FCE /* TMAAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6AE721CB69F8A00066FCE /* TMAAppDependencies.m */; };
 		A4A7B4806441A0C90C6F9AAE /* libPods-TalentoMobileAssigment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1D49119AEF694993D9AFBE /* libPods-TalentoMobileAssigment.a */; };
 /* End PBXBuildFile section */
@@ -67,6 +70,11 @@
 		8E4E6A381CB5B754006B430A /* TMAModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAModuleInterface.h; sourceTree = "<group>"; };
 		8EB808271CB98B03003A180D /* TMACoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMACoreDataManager.h; sourceTree = "<group>"; };
 		8EB808281CB98B03003A180D /* TMACoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMACoreDataManager.m; sourceTree = "<group>"; };
+		8EB8082B1CB9A306003A180D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8EB8082E1CB9A352003A180D /* City+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "City+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8EB8082F1CB9A352003A180D /* City+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "City+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8EB808301CB9A352003A180D /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		8EB808311CB9A352003A180D /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		8EE6AE701CB69C6C00066FCE /* TMACityDetailModuleDelegateInterfaz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMACityDetailModuleDelegateInterfaz.h; sourceTree = "<group>"; };
 		8EE6AE711CB69F8A00066FCE /* TMAAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAAppDependencies.h; sourceTree = "<group>"; };
 		8EE6AE721CB69F8A00066FCE /* TMAAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAAppDependencies.m; sourceTree = "<group>"; };
@@ -171,19 +179,8 @@
 			children = (
 				8E4E6A121CB5B280006B430A /* CityDetail */,
 				8E4E6A111CB5B263006B430A /* SearchCity */,
-				8E4E6A101CB5B256006B430A /* HistoryList */,
 			);
 			name = Modules;
-			sourceTree = "<group>";
-		};
-		8E4E6A101CB5B256006B430A /* HistoryList */ = {
-			isa = PBXGroup;
-			children = (
-				8E4E6A211CB5B36D006B430A /* Application Logic */,
-				8E4E6A201CB5B365006B430A /* User Interface */,
-				8E4E6A1F1CB5B35B006B430A /* Module Interface */,
-			);
-			name = HistoryList;
 			sourceTree = "<group>";
 		};
 		8E4E6A111CB5B263006B430A /* SearchCity */ = {
@@ -306,75 +303,6 @@
 			name = "Module Interface";
 			sourceTree = "<group>";
 		};
-		8E4E6A1F1CB5B35B006B430A /* Module Interface */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Module Interface";
-			sourceTree = "<group>";
-		};
-		8E4E6A201CB5B365006B430A /* User Interface */ = {
-			isa = PBXGroup;
-			children = (
-				8E4E6A271CB5B3A2006B430A /* Wireframe */,
-				8E4E6A261CB5B39E006B430A /* Presenter */,
-				8E4E6A251CB5B399006B430A /* View */,
-			);
-			name = "User Interface";
-			sourceTree = "<group>";
-		};
-		8E4E6A211CB5B36D006B430A /* Application Logic */ = {
-			isa = PBXGroup;
-			children = (
-				8E4E6A241CB5B385006B430A /* Manager */,
-				8E4E6A231CB5B37D006B430A /* Interactor */,
-				8E4E6A221CB5B378006B430A /* Model */,
-			);
-			name = "Application Logic";
-			sourceTree = "<group>";
-		};
-		8E4E6A221CB5B378006B430A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		8E4E6A231CB5B37D006B430A /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Interactor;
-			sourceTree = "<group>";
-		};
-		8E4E6A241CB5B385006B430A /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Manager;
-			sourceTree = "<group>";
-		};
-		8E4E6A251CB5B399006B430A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		8E4E6A261CB5B39E006B430A /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
-		8E4E6A271CB5B3A2006B430A /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Wireframe;
-			sourceTree = "<group>";
-		};
 		8E4E6A281CB5B3B6006B430A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,10 +369,23 @@
 		8EB808261CB98AF1003A180D /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
+				8EB8082D1CB9A33F003A180D /* Model */,
 				8EB808271CB98B03003A180D /* TMACoreDataManager.h */,
 				8EB808281CB98B03003A180D /* TMACoreDataManager.m */,
+				8EB8082A1CB9A306003A180D /* Model.xcdatamodeld */,
 			);
 			name = DataStore;
+			sourceTree = "<group>";
+		};
+		8EB8082D1CB9A33F003A180D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EB8082E1CB9A352003A180D /* City+CoreDataProperties.h */,
+				8EB8082F1CB9A352003A180D /* City+CoreDataProperties.m */,
+				8EB808301CB9A352003A180D /* City.h */,
+				8EB808311CB9A352003A180D /* City.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		D511BA7235F1A903BB77CC89 /* Frameworks */ = {
@@ -606,6 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB808321CB9A352003A180D /* City+CoreDataProperties.m in Sources */,
 				8E0A47761CB6513500F4D663 /* TMASearchCityInteractor.m in Sources */,
 				8E0A477D1CB65CB300F4D663 /* TMAGooglePlacesClient.m in Sources */,
 				8E0A47841CB68F9500F4D663 /* TMACityDetailWireFrame.m in Sources */,
@@ -617,6 +559,8 @@
 				8EE6AE731CB69F8A00066FCE /* TMAAppDependencies.m in Sources */,
 				8E4E6A371CB5B70D006B430A /* TMASearchCityPresenter.m in Sources */,
 				8E4E69E91CB5A646006B430A /* main.m in Sources */,
+				8EB808331CB9A352003A180D /* City.m in Sources */,
+				8EB8082C1CB9A306003A180D /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,6 +767,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8EB8082A1CB9A306003A180D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8EB8082B1CB9A306003A180D /* Model.xcdatamodel */,
+			);
+			currentVersion = 8EB8082B1CB9A306003A180D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8E4E69DC1CB5A646006B430A /* Project object */;
 }

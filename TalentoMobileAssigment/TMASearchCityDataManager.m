@@ -41,7 +41,22 @@
 
 - (void)citiesFromHistory:(void (^)(NSArray *results))completionBlock
 {
-    completionBlock(@[@"Madrid", @"Barcelona", @"Valencia"]);
+    __weak typeof (self) welf = self;
+    [self.coreDataManager fetchCitiesFromHistory:^(NSArray *results) {
+        if (results)
+        {
+            completionBlock([welf citiesFromDataStorage:results]);
+        }
+        else
+        {
+            completionBlock(@[]);
+        }
+    }];
+}
+
+- (void)addNewCity:(NSString *)cityName
+{
+    [self.coreDataManager saveCityInHistoryWithName:cityName];
 }
 
 #pragma mark - Private
@@ -52,6 +67,17 @@
     for (GMSAutocompletePrediction *city in items)
     {
         [cities addObject:city.attributedFullText.string];
+    }
+    
+    return cities;
+}
+
+- (NSArray *)citiesFromDataStorage:(NSArray *)items
+{
+    NSMutableArray *cities = [[NSMutableArray alloc] init];
+    for (City *city in items)
+    {
+        [cities addObject:city.name];
     }
     
     return cities;

@@ -38,4 +38,9 @@
     }];
 }
 
+- (void)addCityWithName:(NSString *)cityName
+{
+    [self.dataManager addNewCity:cityName];
+}
+
 @end

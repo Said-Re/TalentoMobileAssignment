@@ -15,9 +15,13 @@
 @property (nonatomic, strong) TMAGooglePlacesClient *googlePlacesClient;
 @property (nonatomic, strong) TMACoreDataManager *coreDataManager;
 
-- (id)initWithGooglePlacesClient:(TMAGooglePlacesClient *)googlePlacesClient andCoreDataManager: (TMACoreDataManager *) coreDataManager;
+- (id)initWithGooglePlacesClient:(TMAGooglePlacesClient *)googlePlacesClient
+              andCoreDataManager: (TMACoreDataManager *) coreDataManager;
+
 - (void)citiesWithName:(NSString *)cityName
     andCompletionBlock:(void (^)(NSArray *results))completionBlock;
+
 - (void)citiesFromHistory:(void (^)(NSArray *results))completionBlock;
+- (void)addNewCity:(NSString *)cityName;
 
 @end

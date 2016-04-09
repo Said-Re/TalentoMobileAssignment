@@ -14,7 +14,7 @@
 
 - (void)presentCity:(NSString *)cityName
 {
-
+    [self.interactor addCityWithName:cityName];
 }
 
 - (void)findCities:(NSString *)cityName

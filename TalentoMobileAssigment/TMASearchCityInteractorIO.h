@@ -12,9 +12,9 @@
 
 - (void)findUpcomingItemsWithText:(NSString *)text;
 - (void)fetchSearchHistory;
+- (void)addCityWithName:(NSString *)cityName;
 
 @end
-
 
 @protocol TMASearchCityInteractorOutput <NSObject>
 
