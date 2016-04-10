@@ -35,6 +35,7 @@
     
     UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.tableView addGestureRecognizer:gesture];
+    [self.navigationController.navigationBar addGestureRecognizer:gesture];
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,6 +67,7 @@
 {
     [self dismissKeyboard];
     searchBar.text = @"";
+    [self.eventHandler presentHistory];
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
@@ -100,7 +102,6 @@
     return 1;
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.items.count;
@@ -109,10 +110,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
     cell.textLabel.text = self.items[indexPath.row];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.eventHandler presentCity:self.items[indexPath.row]];
 }
 
 @end

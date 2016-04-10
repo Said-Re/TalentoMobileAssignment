@@ -11,6 +11,14 @@
 		8E0A47791CB659C800F4D663 /* TMASearchCityDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A47781CB659C800F4D663 /* TMASearchCityDataManager.m */; };
 		8E0A477D1CB65CB300F4D663 /* TMAGooglePlacesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A477C1CB65CB300F4D663 /* TMAGooglePlacesClient.m */; };
 		8E0A47841CB68F9500F4D663 /* TMACityDetailWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A47831CB68F9500F4D663 /* TMACityDetailWireFrame.m */; };
+		8E1DC9A51CBAC74D00BBC2F3 /* TMACityDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DC9A41CBAC74D00BBC2F3 /* TMACityDetailPresenter.m */; };
+		8E1DC9A91CBAC77200BBC2F3 /* TMACityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DC9A71CBAC77200BBC2F3 /* TMACityDetailViewController.m */; };
+		8E1DC9AA1CBAC77200BBC2F3 /* TMACityDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E1DC9A81CBAC77200BBC2F3 /* TMACityDetailViewController.xib */; };
+		8E1DC9AD1CBAC79700BBC2F3 /* TMACityDetailIteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DC9AC1CBAC79700BBC2F3 /* TMACityDetailIteractor.m */; };
+		8E1DC9B01CBAD2BD00BBC2F3 /* WeatherClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DC9AF1CBAD2BD00BBC2F3 /* WeatherClient.m */; };
+		8E1DC9B31CBAE07A00BBC2F3 /* TMACityDetailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DC9B21CBAE07A00BBC2F3 /* TMACityDetailManager.m */; };
+		8E1DC9B71CBAE30700BBC2F3 /* TMACityInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DC9B61CBAE30700BBC2F3 /* TMACityInfo.m */; };
+		8E1DC9BA1CBAE48700BBC2F3 /* TMACardinalPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DC9B91CBAE48700BBC2F3 /* TMACardinalPoints.m */; };
 		8E4E69E91CB5A646006B430A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E69E81CB5A646006B430A /* main.m */; };
 		8E4E69EC1CB5A646006B430A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E69EB1CB5A646006B430A /* AppDelegate.m */; };
 		8E4E69F21CB5A646006B430A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4E69F01CB5A646006B430A /* Main.storyboard */; };
@@ -50,6 +58,21 @@
 		8E0A477C1CB65CB300F4D663 /* TMAGooglePlacesClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAGooglePlacesClient.m; sourceTree = "<group>"; };
 		8E0A47821CB68F9500F4D663 /* TMACityDetailWireFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMACityDetailWireFrame.h; sourceTree = "<group>"; };
 		8E0A47831CB68F9500F4D663 /* TMACityDetailWireFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMACityDetailWireFrame.m; sourceTree = "<group>"; };
+		8E1DC9A31CBAC74D00BBC2F3 /* TMACityDetailPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMACityDetailPresenter.h; sourceTree = "<group>"; };
+		8E1DC9A41CBAC74D00BBC2F3 /* TMACityDetailPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMACityDetailPresenter.m; sourceTree = "<group>"; };
+		8E1DC9A61CBAC77200BBC2F3 /* TMACityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMACityDetailViewController.h; sourceTree = "<group>"; };
+		8E1DC9A71CBAC77200BBC2F3 /* TMACityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMACityDetailViewController.m; sourceTree = "<group>"; };
+		8E1DC9A81CBAC77200BBC2F3 /* TMACityDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMACityDetailViewController.xib; sourceTree = "<group>"; };
+		8E1DC9AB1CBAC79700BBC2F3 /* TMACityDetailIteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMACityDetailIteractor.h; sourceTree = "<group>"; };
+		8E1DC9AC1CBAC79700BBC2F3 /* TMACityDetailIteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMACityDetailIteractor.m; sourceTree = "<group>"; };
+		8E1DC9AE1CBAD2BD00BBC2F3 /* WeatherClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherClient.h; sourceTree = "<group>"; };
+		8E1DC9AF1CBAD2BD00BBC2F3 /* WeatherClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherClient.m; sourceTree = "<group>"; };
+		8E1DC9B11CBAE07A00BBC2F3 /* TMACityDetailManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMACityDetailManager.h; sourceTree = "<group>"; };
+		8E1DC9B21CBAE07A00BBC2F3 /* TMACityDetailManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMACityDetailManager.m; sourceTree = "<group>"; };
+		8E1DC9B51CBAE30700BBC2F3 /* TMACityInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMACityInfo.h; sourceTree = "<group>"; };
+		8E1DC9B61CBAE30700BBC2F3 /* TMACityInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMACityInfo.m; sourceTree = "<group>"; };
+		8E1DC9B81CBAE48700BBC2F3 /* TMACardinalPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMACardinalPoints.h; sourceTree = "<group>"; };
+		8E1DC9B91CBAE48700BBC2F3 /* TMACardinalPoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMACardinalPoints.m; sourceTree = "<group>"; };
 		8E4E69E41CB5A646006B430A /* TalentoMobileAssigment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalentoMobileAssigment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4E69E81CB5A646006B430A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E4E69EA1CB5A646006B430A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,8 +138,21 @@
 			children = (
 				8E0A477B1CB65CB300F4D663 /* TMAGooglePlacesClient.h */,
 				8E0A477C1CB65CB300F4D663 /* TMAGooglePlacesClient.m */,
+				8E1DC9AE1CBAD2BD00BBC2F3 /* WeatherClient.h */,
+				8E1DC9AF1CBAD2BD00BBC2F3 /* WeatherClient.m */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		8E1DC9B41CBAE2DB00BBC2F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E1DC9B51CBAE30700BBC2F3 /* TMACityInfo.h */,
+				8E1DC9B61CBAE30700BBC2F3 /* TMACityInfo.m */,
+				8E1DC9B81CBAE48700BBC2F3 /* TMACardinalPoints.h */,
+				8E1DC9B91CBAE48700BBC2F3 /* TMACardinalPoints.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		8E4E69DB1CB5A646006B430A = {
@@ -216,6 +252,8 @@
 		8E4E6A141CB5B2A7006B430A /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				8E1DC9B11CBAE07A00BBC2F3 /* TMACityDetailManager.h */,
+				8E1DC9B21CBAE07A00BBC2F3 /* TMACityDetailManager.m */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -223,6 +261,8 @@
 		8E4E6A151CB5B2B3006B430A /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				8E1DC9AB1CBAC79700BBC2F3 /* TMACityDetailIteractor.h */,
+				8E1DC9AC1CBAC79700BBC2F3 /* TMACityDetailIteractor.m */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -255,6 +295,8 @@
 		8E4E6A191CB5B2E2006B430A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				8E1DC9A31CBAC74D00BBC2F3 /* TMACityDetailPresenter.h */,
+				8E1DC9A41CBAC74D00BBC2F3 /* TMACityDetailPresenter.m */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -262,6 +304,9 @@
 		8E4E6A1A1CB5B2E7006B430A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E1DC9A61CBAC77200BBC2F3 /* TMACityDetailViewController.h */,
+				8E1DC9A71CBAC77200BBC2F3 /* TMACityDetailViewController.m */,
+				8E1DC9A81CBAC77200BBC2F3 /* TMACityDetailViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -360,6 +405,7 @@
 		8E4E6A2E1CB5B3EB006B430A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8E1DC9B41CBAE2DB00BBC2F3 /* Model */,
 				8EB808261CB98AF1003A180D /* DataStore */,
 				8E0A477A1CB65C4400F4D663 /* Networking */,
 			);
@@ -369,7 +415,7 @@
 		8EB808261CB98AF1003A180D /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
-				8EB8082D1CB9A33F003A180D /* Model */,
+				8EB8082D1CB9A33F003A180D /* Entities */,
 				8EB808271CB98B03003A180D /* TMACoreDataManager.h */,
 				8EB808281CB98B03003A180D /* TMACoreDataManager.m */,
 				8EB8082A1CB9A306003A180D /* Model.xcdatamodeld */,
@@ -377,7 +423,7 @@
 			name = DataStore;
 			sourceTree = "<group>";
 		};
-		8EB8082D1CB9A33F003A180D /* Model */ = {
+		8EB8082D1CB9A33F003A180D /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				8EB8082E1CB9A352003A180D /* City+CoreDataProperties.h */,
@@ -385,7 +431,7 @@
 				8EB808301CB9A352003A180D /* City.h */,
 				8EB808311CB9A352003A180D /* City.m */,
 			);
-			name = Model;
+			name = Entities;
 			sourceTree = "<group>";
 		};
 		D511BA7235F1A903BB77CC89 /* Frameworks */ = {
@@ -480,6 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E4E69F71CB5A646006B430A /* LaunchScreen.storyboard in Resources */,
+				8E1DC9AA1CBAC77200BBC2F3 /* TMACityDetailViewController.xib in Resources */,
 				8E4E69F41CB5A646006B430A /* Assets.xcassets in Resources */,
 				8E4E69F21CB5A646006B430A /* Main.storyboard in Resources */,
 			);
@@ -551,12 +598,19 @@
 				8E0A47761CB6513500F4D663 /* TMASearchCityInteractor.m in Sources */,
 				8E0A477D1CB65CB300F4D663 /* TMAGooglePlacesClient.m in Sources */,
 				8E0A47841CB68F9500F4D663 /* TMACityDetailWireFrame.m in Sources */,
+				8E1DC9B31CBAE07A00BBC2F3 /* TMACityDetailManager.m in Sources */,
 				8E4E6A341CB5B6B6006B430A /* TMASearchCityViewController.m in Sources */,
+				8E1DC9BA1CBAE48700BBC2F3 /* TMACardinalPoints.m in Sources */,
+				8E1DC9B71CBAE30700BBC2F3 /* TMACityInfo.m in Sources */,
+				8E1DC9A91CBAC77200BBC2F3 /* TMACityDetailViewController.m in Sources */,
+				8E1DC9A51CBAC74D00BBC2F3 /* TMACityDetailPresenter.m in Sources */,
 				8E0A47791CB659C800F4D663 /* TMASearchCityDataManager.m in Sources */,
 				8EB808291CB98B03003A180D /* TMACoreDataManager.m in Sources */,
 				8E4E6A311CB5B579006B430A /* TMASearchCityWireFrame.m in Sources */,
+				8E1DC9AD1CBAC79700BBC2F3 /* TMACityDetailIteractor.m in Sources */,
 				8E4E69EC1CB5A646006B430A /* AppDelegate.m in Sources */,
 				8EE6AE731CB69F8A00066FCE /* TMAAppDependencies.m in Sources */,
+				8E1DC9B01CBAD2BD00BBC2F3 /* WeatherClient.m in Sources */,
 				8E4E6A371CB5B70D006B430A /* TMASearchCityPresenter.m in Sources */,
 				8E4E69E91CB5A646006B430A /* main.m in Sources */,
 				8EB808331CB9A352003A180D /* City.m in Sources */,
