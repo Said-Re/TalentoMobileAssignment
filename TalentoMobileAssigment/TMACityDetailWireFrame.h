@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "TMACityDetailPresenter.h"
 
 @interface TMACityDetailWireFrame : NSObject
+
+@property (nonatomic, strong) TMACityDetailPresenter *presenter;
 
 - (void)presentCityDetailInterfaceFromViewController:(UIViewController *)viewController;
 

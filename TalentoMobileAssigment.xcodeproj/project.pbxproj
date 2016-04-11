@@ -28,6 +28,7 @@
 		8E4E6A311CB5B579006B430A /* TMASearchCityWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E6A301CB5B579006B430A /* TMASearchCityWireFrame.m */; };
 		8E4E6A341CB5B6B6006B430A /* TMASearchCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E6A331CB5B6B6006B430A /* TMASearchCityViewController.m */; };
 		8E4E6A371CB5B70D006B430A /* TMASearchCityPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E6A361CB5B70D006B430A /* TMASearchCityPresenter.m */; };
+		8E50AA801CBBA3EF00E6D3D0 /* TMAWeatherStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E50AA7F1CBBA3EF00E6D3D0 /* TMAWeatherStation.m */; };
 		8EB808291CB98B03003A180D /* TMACoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB808281CB98B03003A180D /* TMACoreDataManager.m */; };
 		8EB8082C1CB9A306003A180D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8082A1CB9A306003A180D /* Model.xcdatamodeld */; };
 		8EB808321CB9A352003A180D /* City+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8082F1CB9A352003A180D /* City+CoreDataProperties.m */; };
@@ -91,6 +92,11 @@
 		8E4E6A351CB5B70D006B430A /* TMASearchCityPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMASearchCityPresenter.h; sourceTree = "<group>"; };
 		8E4E6A361CB5B70D006B430A /* TMASearchCityPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMASearchCityPresenter.m; sourceTree = "<group>"; };
 		8E4E6A381CB5B754006B430A /* TMAModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAModuleInterface.h; sourceTree = "<group>"; };
+		8E50AA7E1CBBA3EF00E6D3D0 /* TMAWeatherStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAWeatherStation.h; sourceTree = "<group>"; };
+		8E50AA7F1CBBA3EF00E6D3D0 /* TMAWeatherStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAWeatherStation.m; sourceTree = "<group>"; };
+		8E50AA811CBBB1F900E6D3D0 /* TMACityDetailInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMACityDetailInteractorIO.h; sourceTree = "<group>"; };
+		8E50AA821CBBB6AF00E6D3D0 /* TMACityDetailViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMACityDetailViewInterface.h; sourceTree = "<group>"; };
+		8E50AA831CBBC94700E6D3D0 /* TMACityDetailModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMACityDetailModuleInterface.h; sourceTree = "<group>"; };
 		8EB808271CB98B03003A180D /* TMACoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMACoreDataManager.h; sourceTree = "<group>"; };
 		8EB808281CB98B03003A180D /* TMACoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMACoreDataManager.m; sourceTree = "<group>"; };
 		8EB8082B1CB9A306003A180D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -151,6 +157,8 @@
 				8E1DC9B61CBAE30700BBC2F3 /* TMACityInfo.m */,
 				8E1DC9B81CBAE48700BBC2F3 /* TMACardinalPoints.h */,
 				8E1DC9B91CBAE48700BBC2F3 /* TMACardinalPoints.m */,
+				8E50AA7E1CBBA3EF00E6D3D0 /* TMAWeatherStation.h */,
+				8E50AA7F1CBBA3EF00E6D3D0 /* TMAWeatherStation.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -263,6 +271,7 @@
 			children = (
 				8E1DC9AB1CBAC79700BBC2F3 /* TMACityDetailIteractor.h */,
 				8E1DC9AC1CBAC79700BBC2F3 /* TMACityDetailIteractor.m */,
+				8E50AA811CBBB1F900E6D3D0 /* TMACityDetailInteractorIO.h */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -278,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				8EE6AE701CB69C6C00066FCE /* TMACityDetailModuleDelegateInterfaz.h */,
+				8E50AA831CBBC94700E6D3D0 /* TMACityDetailModuleInterface.h */,
 			);
 			name = "Module Interface";
 			sourceTree = "<group>";
@@ -307,6 +317,7 @@
 				8E1DC9A61CBAC77200BBC2F3 /* TMACityDetailViewController.h */,
 				8E1DC9A71CBAC77200BBC2F3 /* TMACityDetailViewController.m */,
 				8E1DC9A81CBAC77200BBC2F3 /* TMACityDetailViewController.xib */,
+				8E50AA821CBBB6AF00E6D3D0 /* TMACityDetailViewInterface.h */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -612,6 +623,7 @@
 				8EE6AE731CB69F8A00066FCE /* TMAAppDependencies.m in Sources */,
 				8E1DC9B01CBAD2BD00BBC2F3 /* WeatherClient.m in Sources */,
 				8E4E6A371CB5B70D006B430A /* TMASearchCityPresenter.m in Sources */,
+				8E50AA801CBBA3EF00E6D3D0 /* TMAWeatherStation.m in Sources */,
 				8E4E69E91CB5A646006B430A /* main.m in Sources */,
 				8EB808331CB9A352003A180D /* City.m in Sources */,
 				8EB8082C1CB9A306003A180D /* Model.xcdatamodeld in Sources */,

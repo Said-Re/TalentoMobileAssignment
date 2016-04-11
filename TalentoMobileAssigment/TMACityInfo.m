@@ -23,8 +23,6 @@
 - (void)setDataWithDictionary:(NSDictionary*)data
 {
     _name = [data objectForKey:@"name"];
-    _country = [data objectForKey:@"countryName"];
-    _fcodeName = [data objectForKey:@"fcodeName"];
     _lat = [[data objectForKey:@"lat"] doubleValue];
     _lng = [[data objectForKey:@"lng"] doubleValue];
     

@@ -8,26 +8,41 @@
 
 #import "TMACityDetailManager.h"
 #import "WeatherClient.h"
-#import "TMACityInfo.h"
+#import "TMAWeatherStation.h"
 
 @implementation TMACityDetailManager
 
 - (void)cityWithInfo:(NSString *)cityName
-    andCompletionBlock:(void (^)(NSArray *results))completionBlock
+    andCompletionBlock:(void (^)(TMACityInfo *city))completionBlock
 {
     __weak typeof (self) welf = self;
     [[WeatherClient sharedClient] citiesInfoWithName:cityName andCompletionBlock:^(NSArray *results) {
         if (results)
         {
-            TMACityInfo *city = [welf cityFromDataServer:results];
+            TMACityInfo *city = [self cityFromDataServer:results];
             if (city)
             {
-            
+                [[WeatherClient sharedClient] cityTemperatureWithCardinalPoints:city.cardinalPoints
+                                                             andCompletionBlock:^(NSArray *results) {
+                    if (results)
+                    {
+                        city.weatherStations = [self weatherStationsFromDataServer:results];
+                        completionBlock(city);
+                    }
+                    else
+                    {
+                        completionBlock(nil);
+                    }
+                }];
+            }
+            else
+            {
+                completionBlock(nil);
             }
         }
         else
         {
-        
+            completionBlock(nil);
         }
                             
     }];
@@ -43,6 +58,17 @@
         }
     }
     return nil;
+}
+
+- (NSArray *)weatherStationsFromDataServer:(NSArray *)items
+{
+    NSMutableArray *weatherStations = [[NSMutableArray alloc] init];
+    for (NSDictionary *weatherStationDictionary in items)
+    {
+        TMAWeatherStation *weatherStation = [[TMAWeatherStation alloc] initWithData:weatherStationDictionary];
+        [weatherStations addObject:weatherStation];
+    }
+    return weatherStations;
 }
 
 @end

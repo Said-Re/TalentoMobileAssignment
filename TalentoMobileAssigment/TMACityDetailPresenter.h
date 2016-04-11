@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TMACityDetailInteractorIO.h"
+#import "TMACityDetailViewInterface.h"
+#import "TMACityDetailModuleInterface.h"
+#import "TMACityDetailModuleDelegateInterfaz.h"
 
-@interface TMACityDetailPresenter : NSObject
+@interface TMACityDetailPresenter : NSObject <TMACityDetailInteractorOutput, TMACityDetailModuleDelegateInterfaz>
+
+@property (nonatomic, strong) id <TMACityDetailInteractorInput> iteractor;
+@property (nonatomic, strong) id <TMACityDetailViewInterface> userInterface;
 
 @end

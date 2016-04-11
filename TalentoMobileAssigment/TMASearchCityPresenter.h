@@ -15,11 +15,12 @@
 
 @class TMASearchCityWireFrame;
 
-@interface TMASearchCityPresenter : NSObject <TMASearchCityInteractorOutput, TMAModuleInterface, TMACityDetailModuleDelegateInterfaz>
+@interface TMASearchCityPresenter : NSObject <TMASearchCityInteractorOutput, TMAModuleInterface>
 
 @property (nonatomic, strong) TMASearchCityWireFrame *wireFrame;
 @property (nonatomic, strong) id <TMASearchCityViewInterface> userInterface;
 @property (nonatomic, strong) id <TMASearchCityInteractorInput> interactor;
+@property (nonatomic, strong) id <TMACityDetailModuleDelegateInterfaz> presenterCityDetailModule;
 
 
 @end

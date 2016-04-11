@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TMACityDetailViewInterface.h"
+#import "TMACityDetailModuleInterface.h"
 
-@interface TMACityDetailViewController : UIViewController
+@interface TMACityDetailViewController : UIViewController <TMACityDetailViewInterface>
 
 @end

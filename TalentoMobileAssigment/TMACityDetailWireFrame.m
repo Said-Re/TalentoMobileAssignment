@@ -7,12 +7,15 @@
 //
 
 #import "TMACityDetailWireFrame.h"
+#import "TMACityDetailViewController.h"
 
 @implementation TMACityDetailWireFrame
 
 - (void)presentCityDetailInterfaceFromViewController:(UIViewController *)viewController
 {
-    
+    TMACityDetailViewController *cityDetailViewController = [[TMACityDetailViewController alloc] init];
+    self.presenter.userInterface = cityDetailViewController;
+    [viewController.navigationController pushViewController:cityDetailViewController animated:YES];
 }
 
 @end

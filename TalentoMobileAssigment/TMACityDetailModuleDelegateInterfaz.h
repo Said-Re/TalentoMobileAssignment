@@ -10,5 +10,6 @@
 
 @protocol TMACityDetailModuleDelegateInterfaz <NSObject>
 
+- (void)findCityWeatherInfo:(NSString *)cityName;
 
 @end

@@ -10,4 +10,26 @@
 
 @implementation TMACityDetailPresenter
 
+#pragma mark - TMACityDetailInteractorOuput
+
+- (void)foundCityWeatherInfo:(TMACityInfo *)city
+{
+    if (city)
+    {
+        [self.userInterface foundCityWeatherInfo:city];
+    }
+    else
+    {
+        [self.userInterface noCityWeatherInfoFound];
+    }
+    
+}
+
+#pragma mark - TMACityDetailModuleDelegateInterfaz
+
+- (void)findCityWeatherInfo:(NSString *)cityName
+{
+    [self.iteractor findCityWeatherInfo:cityName];
+}
+
 @end

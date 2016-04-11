@@ -49,7 +49,7 @@ NSString * const kWeatherAPIURL = @"http://api.geonames.org/";
                                  @"lang"            : @"en",
                                  @"isNameRequired"  : @"true",
                                  @"style"           : @"FULL",
-                                 @"username"        : @"demo"
+                                 @"username"        : @"ilgeonamessample"
                                  };
     
     [self GET:@"searchJSON" parameters:parameters progress:^(NSProgress *downloadProgress)
@@ -58,8 +58,8 @@ NSString * const kWeatherAPIURL = @"http://api.geonames.org/";
     }
       success:^(NSURLSessionDataTask *task, id responseObject)
     {
-        NSLog(@"%@", responseObject);
-        NSArray *results = (NSArray *)responseObject;
+        //NSLog(@"%@", responseObject);
+        NSArray *results = (NSArray *)[responseObject objectForKey:@"geonames"];
         completionBlock(results);
     }
       failure:^(NSURLSessionDataTask *task, NSError *error)
@@ -67,6 +67,35 @@ NSString * const kWeatherAPIURL = @"http://api.geonames.org/";
          NSLog(@"%@", error);
          completionBlock(@[]);
     }];
+}
+
+//http://api.geonames.org/weatherJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&username=demo
+- (void)cityTemperatureWithCardinalPoints:(TMACardinalPoints *)cardinalPoints
+                       andCompletionBlock:(void (^)(NSArray *results))completionBlock
+{
+    NSDictionary *parameters = @{
+                                 @"north"       : [NSNumber numberWithDouble:cardinalPoints.north],
+                                 @"south"       : [NSNumber numberWithDouble:cardinalPoints.south],
+                                 @"east"        : [NSNumber numberWithDouble:cardinalPoints.east],
+                                 @"west"        : [NSNumber numberWithDouble:cardinalPoints.west],
+                                 @"username"    : @"ilgeonamessample",
+                                 };
+    
+    [self GET:@"weatherJSON" parameters:parameters progress:^(NSProgress *downloadProgress)
+     {
+         NSLog(@"%@", downloadProgress);
+     }
+      success:^(NSURLSessionDataTask *task, id responseObject)
+     {
+         NSLog(@"%@", responseObject);
+         NSArray *results = (NSArray *)[responseObject objectForKey:@"weatherObservations"];
+         completionBlock(results);
+     }
+      failure:^(NSURLSessionDataTask *task, NSError *error)
+     {
+         NSLog(@"%@", error);
+         completionBlock(@[]);
+     }];
 }
 
 @end

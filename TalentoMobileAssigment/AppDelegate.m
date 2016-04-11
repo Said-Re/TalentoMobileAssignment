@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import "TMAAppDependencies.h"
+#import "TMACityDetailManager.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,12 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[[TMACityDetailManager alloc] init] cityWithInfo:@"Madrid" andCompletionBlock:^(TMACityInfo *city) {
+        NSLog(@"------------------------");
+        NSLog(@"%i", city.weatherStations.count);
+    }];
+    
+    
     [GMSServices provideAPIKey:@"AIzaSyDmwNSTjS38So7pxN53YLcZnuPYjvndXRM"];
     self.appDependencies = [[TMAAppDependencies alloc] init];
     self.window = [[UIWindow alloc] init];

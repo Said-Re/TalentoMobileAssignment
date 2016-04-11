@@ -7,6 +7,7 @@
 //
 
 #import <AFNetworking/AFNetworking.h>
+#import "TMACardinalPoints.h"
 
 @interface WeatherClient : AFHTTPSessionManager
 
@@ -14,5 +15,8 @@
 
 - (void)citiesInfoWithName:(NSString *)cityName
         andCompletionBlock:(void (^)(NSArray *results))completionBlock;
+
+- (void)cityTemperatureWithCardinalPoints:(TMACardinalPoints *)cardinalPoints
+                       andCompletionBlock:(void (^)(NSArray *results))completionBlock;
 
 @end

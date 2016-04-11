@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TMACityInfo.h"
 
 @interface TMACityDetailManager : NSObject
+
+- (void)cityWithInfo:(NSString *)cityName
+  andCompletionBlock:(void (^)(TMACityInfo *city))completionBlock;
 
 @end

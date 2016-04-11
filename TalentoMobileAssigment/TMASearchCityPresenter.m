@@ -15,6 +15,8 @@
 - (void)presentCity:(NSString *)cityName
 {
     [self.interactor addCityWithName:cityName];
+    [self.wireFrame presentCityDetailInterface];
+    [self.presenterCityDetailModule findCityWeatherInfo:cityName];
 }
 
 - (void)findCities:(NSString *)cityName

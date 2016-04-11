@@ -12,6 +12,10 @@
 #import "TMASearchCityDataManager.h"
 #import "TMASearchCityInteractor.h"
 #import "TMACoreDataManager.h"
+#import "TMACityDetailPresenter.h"
+#import "TMACityDetailIteractor.h"
+#import "TMACityDetailManager.h"
+#import "TMACityDetailWireFrame.h"
 
 @class TMAGooglePlacesClient;
 
@@ -53,6 +57,17 @@
     searchCityInteractor.output = searchCityPresenter;
     searchCityPresenter.interactor = searchCityInteractor;
     searchCityPresenter.wireFrame = self.searchCityWireFrame;
+    
+    // CityDetail Module
+    TMACityDetailPresenter *cityDetailPresenter = [[TMACityDetailPresenter alloc] init];
+    TMACityDetailManager *cityDetailManager = [[TMACityDetailManager alloc] init];
+    TMACityDetailIteractor *cityDetailIteractor = [[TMACityDetailIteractor alloc] initWithDataManager:cityDetailManager];
+    TMACityDetailWireFrame *cityDetailWireFrame = [[TMACityDetailWireFrame alloc] init];
+    
+    cityDetailPresenter.iteractor = cityDetailIteractor;
+    cityDetailWireFrame.presenter = cityDetailPresenter;
+    searchCityPresenter.presenterCityDetailModule = cityDetailPresenter;
+    self.searchCityWireFrame.cityDetailWireframe = cityDetailWireFrame;
 }
 
 @end
