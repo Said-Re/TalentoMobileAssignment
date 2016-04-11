@@ -13,4 +13,5 @@ The language to implement the solution must be Objective-C
 * AFNetworking for connect to the API.
 * CoreData as local storage.
 * Google Places API for allowing autocomplete.
-* VIPER as Architecture
+* VIPER as Architecture.
+* CococaPods as dependency manager. Remeber to run <code> pod install </code>
