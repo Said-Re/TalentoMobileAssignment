@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "TMACityDetailViewInterface.h"
-#import "TMACityDetailModuleInterface.h"
 
 @interface TMACityDetailViewController : UIViewController <TMACityDetailViewInterface>
 

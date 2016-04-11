@@ -26,7 +26,7 @@
     andCompletionBlock:(void (^)(NSArray *results))completionBlock
 {
     __weak typeof (self) welf = self;
-    [self.googlePlacesClient placeAutocompleteWithText:cityName
+    [welf.googlePlacesClient placeAutocompleteWithText:cityName
                                     andCompletionBlock:^(NSArray *results) {
         if (results)
         {
@@ -42,7 +42,7 @@
 - (void)citiesFromHistory:(void (^)(NSArray *results))completionBlock
 {
     __weak typeof (self) welf = self;
-    [self.coreDataManager fetchCitiesFromHistory:^(NSArray *results) {
+    [welf.coreDataManager fetchCitiesFromHistory:^(NSArray *results) {
         if (results)
         {
             completionBlock([welf citiesFromDataStorage:results]);

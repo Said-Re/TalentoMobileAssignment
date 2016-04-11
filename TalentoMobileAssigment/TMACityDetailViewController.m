@@ -70,7 +70,42 @@
         }
         [self setMarkerOnMapWithName:station.name andLocation:CLLocationCoordinate2DMake(station.lat, station.lng)];
     }
-    self.cityTemperature.text = [NSString stringWithFormat:@"%i", temperature / temperatureCount];
+    temperature /= temperatureCount;
+    self.cityTemperature.text = [NSString stringWithFormat:@"%iº", temperature];
+    [self setTemperatureInSlider:temperature];
+}
+
+- (void)setTemperatureInSlider:(int)temperature
+{
+    [UIView animateWithDuration:3.0 animations:^{
+        self.temperatureMarker.value = 40 + temperature;
+        self.temperatureMarker.tintColor = [self colorForTemperature:temperature];
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+- (UIColor *)colorForTemperature:(int)temperature
+{
+    if (temperature < -20)
+    {
+        return [UIColor greenColor];
+    }
+    else if (temperature > -20 && temperature < 0)
+    {
+        return [UIColor blueColor];
+    }
+    else if (temperature > 0 && temperature < 15)
+    {
+        
+        return [UIColor yellowColor];
+    }
+    else
+    {
+        return [UIColor redColor];
+    }
+    
 }
 
 - (void)noCityWeatherInfoFound

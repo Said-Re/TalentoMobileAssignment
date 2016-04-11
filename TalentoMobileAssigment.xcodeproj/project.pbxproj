@@ -99,7 +99,6 @@
 		8E50AA7F1CBBA3EF00E6D3D0 /* TMAWeatherStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAWeatherStation.m; sourceTree = "<group>"; };
 		8E50AA811CBBB1F900E6D3D0 /* TMACityDetailInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMACityDetailInteractorIO.h; sourceTree = "<group>"; };
 		8E50AA821CBBB6AF00E6D3D0 /* TMACityDetailViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMACityDetailViewInterface.h; sourceTree = "<group>"; };
-		8E50AA831CBBC94700E6D3D0 /* TMACityDetailModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMACityDetailModuleInterface.h; sourceTree = "<group>"; };
 		8E50AA851CBBE9A300E6D3D0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8E50AA871CBBF31E00E6D3D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8E50AA891CBBF32400E6D3D0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -296,7 +295,6 @@
 			isa = PBXGroup;
 			children = (
 				8EE6AE701CB69C6C00066FCE /* TMACityDetailModuleDelegateInterfaz.h */,
-				8E50AA831CBBC94700E6D3D0 /* TMACityDetailModuleInterface.h */,
 			);
 			name = "Module Interface";
 			sourceTree = "<group>";

@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "TMACityDetailInteractorIO.h"
 #import "TMACityDetailViewInterface.h"
-#import "TMACityDetailModuleInterface.h"
 #import "TMACityDetailModuleDelegateInterfaz.h"
 
 @interface TMACityDetailPresenter : NSObject <TMACityDetailInteractorOutput, TMACityDetailModuleDelegateInterfaz>
