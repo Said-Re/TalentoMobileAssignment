@@ -23,9 +23,9 @@
 - (void)setDataWithDictionary:(NSDictionary*)data
 {
     _name = [data objectForKey:@"stationName"];
-    _lng = [[data objectForKey:@"south"] doubleValue];
-    _lat = [[data objectForKey:@"north"] doubleValue];
-    _temperature = [[data objectForKey:@"west"] floatValue];
+    _lng = [[data objectForKey:@"lng"] doubleValue];
+    _lat = [[data objectForKey:@"lat"] doubleValue];
+    _temperature = [[data objectForKey:@"temperature"] floatValue];
 }
 
 @end

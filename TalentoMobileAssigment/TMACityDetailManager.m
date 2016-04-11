@@ -15,7 +15,6 @@
 - (void)cityWithInfo:(NSString *)cityName
     andCompletionBlock:(void (^)(TMACityInfo *city))completionBlock
 {
-    __weak typeof (self) welf = self;
     [[WeatherClient sharedClient] citiesInfoWithName:cityName andCompletionBlock:^(NSArray *results) {
         if (results)
         {

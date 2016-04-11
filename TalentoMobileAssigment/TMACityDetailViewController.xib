@@ -7,6 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TMACityDetailViewController">
             <connections>
+                <outlet property="cityName" destination="kUI-Rf-KOZ" id="0qX-CI-STa"/>
+                <outlet property="cityTemperature" destination="mKI-Lg-Rfg" id="Dhf-Hw-mjS"/>
+                <outlet property="mapView" destination="Fzv-Iv-Vyg" id="PCk-hi-vEW"/>
+                <outlet property="temperatureMarker" destination="vvN-RD-Usc" id="ICt-le-7om"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,20 +19,43 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUI-Rf-KOZ">
-                    <rect key="frame" x="193" y="27" width="215" height="45"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUI-Rf-KOZ">
+                    <rect key="frame" x="193" y="72" width="215" height="45"/>
                     <fontDescription key="fontDescription" type="system" pointSize="29"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20º" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKI-Lg-Rfg">
-                    <rect key="frame" x="230" y="95" width="140" height="79"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="20º" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKI-Lg-Rfg">
+                    <rect key="frame" x="230" y="125" width="140" height="57"/>
                     <fontDescription key="fontDescription" type="system" pointSize="47"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Fzv-Iv-Vyg">
+                    <rect key="frame" x="42" y="234" width="516" height="351"/>
+                </mapView>
+                <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vvN-RD-Usc">
+                    <rect key="frame" x="192" y="190" width="216" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="212" id="hZq-3i-Mbh"/>
+                        <constraint firstAttribute="height" constant="30" id="jQd-PP-IQd"/>
+                    </constraints>
+                </slider>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Fzv-Iv-Vyg" firstAttribute="top" secondItem="vvN-RD-Usc" secondAttribute="bottom" constant="14" id="0Wq-pX-HjP"/>
+                <constraint firstAttribute="trailing" secondItem="Fzv-Iv-Vyg" secondAttribute="trailing" constant="42" id="26y-XK-Wix"/>
+                <constraint firstItem="Fzv-Iv-Vyg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="42" id="A6d-5x-h6L"/>
+                <constraint firstItem="mKI-Lg-Rfg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DZw-Qz-3Ez"/>
+                <constraint firstItem="mKI-Lg-Rfg" firstAttribute="top" secondItem="kUI-Rf-KOZ" secondAttribute="bottom" constant="8" id="Li4-aO-dFB"/>
+                <constraint firstItem="kUI-Rf-KOZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MQ4-Ge-pfk"/>
+                <constraint firstItem="vvN-RD-Usc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Nev-w3-CZ4"/>
+                <constraint firstAttribute="bottom" secondItem="Fzv-Iv-Vyg" secondAttribute="bottom" constant="15" id="OsY-8h-H82"/>
+                <constraint firstItem="mKI-Lg-Rfg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XI9-8m-10L"/>
+                <constraint firstItem="kUI-Rf-KOZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="nsi-HO-WKJ"/>
+            </constraints>
+            <point key="canvasLocation" x="143" y="245"/>
         </view>
     </objects>
 </document>

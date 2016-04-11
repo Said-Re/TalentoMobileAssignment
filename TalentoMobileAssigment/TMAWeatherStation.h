@@ -13,7 +13,7 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic) double lat;
 @property (nonatomic) double lng;
-@property (nonatomic) float temperature;
+@property (nonatomic) int temperature;
 
 - (id)initWithData:(NSDictionary *)data;
 
