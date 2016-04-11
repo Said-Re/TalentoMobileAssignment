@@ -26,7 +26,7 @@
 {
     __weak typeof (self) welf = self;
     [self.dataManager cityWithInfo:cityName andCompletionBlock:^(TMACityInfo *city) {
-        [welf.output foundCityWeatherInfo:city];
+        [self.output foundCityWeatherInfo:city];
     }];
 }
 

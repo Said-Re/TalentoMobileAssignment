@@ -32,10 +32,6 @@
     self.searchBar.delegate = self;
     [self.searchBar setShowsCancelButton:YES];
     self.tableView.tableHeaderView = self.searchBar;
-    
-    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
-    [self.tableView addGestureRecognizer:gesture];
-    [self.navigationController.navigationBar addGestureRecognizer:gesture];
 }
 
 - (void)didReceiveMemoryWarning

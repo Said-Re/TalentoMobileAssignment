@@ -65,6 +65,7 @@
     TMACityDetailWireFrame *cityDetailWireFrame = [[TMACityDetailWireFrame alloc] init];
     
     cityDetailPresenter.iteractor = cityDetailIteractor;
+    cityDetailIteractor.output = cityDetailPresenter;
     cityDetailWireFrame.presenter = cityDetailPresenter;
     searchCityPresenter.presenterCityDetailModule = cityDetailPresenter;
     self.searchCityWireFrame.cityDetailWireframe = cityDetailWireFrame;

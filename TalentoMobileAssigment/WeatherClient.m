@@ -58,14 +58,14 @@ NSString * const kWeatherAPIURL = @"http://api.geonames.org/";
     }
       success:^(NSURLSessionDataTask *task, id responseObject)
     {
-        //NSLog(@"%@", responseObject);
+        NSLog(@"%@", responseObject);
         NSArray *results = (NSArray *)[responseObject objectForKey:@"geonames"];
         completionBlock(results);
     }
       failure:^(NSURLSessionDataTask *task, NSError *error)
      {
          NSLog(@"%@", error);
-         completionBlock(@[]);
+         completionBlock(nil);
     }];
 }
 
@@ -94,7 +94,7 @@ NSString * const kWeatherAPIURL = @"http://api.geonames.org/";
       failure:^(NSURLSessionDataTask *task, NSError *error)
      {
          NSLog(@"%@", error);
-         completionBlock(@[]);
+         completionBlock(nil);
      }];
 }
 

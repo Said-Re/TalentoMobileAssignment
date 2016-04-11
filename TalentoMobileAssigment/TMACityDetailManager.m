@@ -24,7 +24,7 @@
             {
                 [[WeatherClient sharedClient] cityTemperatureWithCardinalPoints:city.cardinalPoints
                                                              andCompletionBlock:^(NSArray *results) {
-                    if (results)
+                    if (results && results.count > 0)
                     {
                         city.weatherStations = [self weatherStationsFromDataServer:results];
                         completionBlock(city);
